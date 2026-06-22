@@ -1,6 +1,6 @@
 // Mobile-nav hamburger toggle. Served as an external file (referenced with
 // `is:inline src`) so it satisfies a strict `script-src 'self'` — the site
-// ships no inline executable scripts. See public/_headers.
+// ships no inline executable scripts. See docs/deploy.md.
 const burger = document.getElementById('nav-burger');
 const mobileNav = document.getElementById('mobile-nav');
 
