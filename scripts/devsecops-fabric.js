@@ -21,7 +21,13 @@ if (canvas) {
   const tok = (name, fallback) => root.getPropertyValue(name).trim() || fallback;
   const hexToRgb = (hex) => {
     const h = hex.replace('#', '');
-    const full = h.length === 3 ? h.split('').map((c) => c + c).join('') : h;
+    const full =
+      h.length === 3
+        ? h
+            .split('')
+            .map((c) => c + c)
+            .join('')
+        : h;
     const int = parseInt(full, 16);
     return { r: (int >> 16) & 255, g: (int >> 8) & 255, b: int & 255 };
   };
@@ -211,7 +217,7 @@ if (canvas) {
     // Pause when the band is offscreen — keeps it off the CPU/GPU budget.
     const io = new IntersectionObserver(
       (entries) => {
-        for (const e of entries) (e.isIntersecting ? start() : stop());
+        for (const e of entries) e.isIntersecting ? start() : stop();
       },
       { threshold: 0 }
     );
