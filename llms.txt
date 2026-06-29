@@ -9,6 +9,8 @@
 - [Public & Private Sector](https://layer7.uk/sectors/): government-grade security across UK public and private sectors; G-Cloud 14, DOS 7, CCS frameworks.
 
 ## Insights
+- [How Much Does Cyber Essentials Plus Cost? (2026 UK Price Guide)](https://layer7.uk/insights/cyber-essentials-plus-cost/)
+- [Cyber Essentials vs Cyber Essentials Plus: Which Do You Need?](https://layer7.uk/insights/cyber-essentials-vs-plus/)
 - [What micro-businesses actually need from cybersecurity support](https://layer7.uk/insights/what-micro-businesses-actually-need-from-cybersecurity-support/)
 - [Cyber Essentials changes 2026: Danzell, mandatory MFA and cloud scope](https://layer7.uk/insights/cyber-essentials-changes-2026/)
 - [Why Cyber Essentials Plus Matters More Than Ever in 2026](https://layer7.uk/insights/why-cyber-essentials-plus-matters-more-than-ever-in-2026/)
