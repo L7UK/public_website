@@ -9,6 +9,7 @@
 - [Public & Private Sector](https://layer7.uk/sectors/): government-grade security across UK public and private sectors; G-Cloud 14, DOS 7, CCS frameworks.
 
 ## Insights
+- [Penetration Testing vs Vulnerability Scanning: What's the Difference?](https://layer7.uk/insights/penetration-testing-vs-vulnerability-scanning/)
 - [Becoming a Layer 7 Partner: A Guide for MSPs](https://layer7.uk/insights/becoming-a-layer7-partner/)
 - [How to Pass a Cyber Essentials Plus Audit: 2026 Checklist](https://layer7.uk/insights/cyber-essentials-plus-audit-checklist/)
 - [How Much Does Cyber Essentials Plus Cost? (2026 UK Price Guide)](https://layer7.uk/insights/cyber-essentials-plus-cost/)
