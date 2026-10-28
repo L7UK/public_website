@@ -9,6 +9,8 @@
 - [Public & Private Sector](https://layer7.uk/sectors/): government-grade security across UK public and private sectors; G-Cloud 14, DOS 7, CCS frameworks.
 
 ## Insights
+- [How to choose a Cyber Essentials certification body](https://layer7.uk/insights/how-to-choose-a-cyber-essentials-certification-body/)
+- [What EASM actually finds, and when you need it](https://layer7.uk/insights/what-easm-actually-finds/)
 - [DCC Level 0: what the MOD's December 2026 deadline actually requires](https://layer7.uk/insights/dcc-level-0-requirements/)
 - [What continuous vulnerability management actually means](https://layer7.uk/insights/what-continuous-vulnerability-management-means/)
 - [What GovAssure Actually Asks For](https://layer7.uk/insights/what-govassure-actually-asks-for/)
