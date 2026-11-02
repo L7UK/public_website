@@ -1,13 +1,13 @@
 // Microsoft 365 "Secure Score" CTA background (Cloud Security Assessment page).
 //
-// Concept: an abstract gauge that fills to a posture score and settles — a 270°
+// Concept: an abstract gauge that fills to a posture score and settles - a 270°
 // bright-purple arc with a glowing leading edge, ringed by Layer 7 trapezoid tick
 // marks, the brand mark at its centre. Reads instantly as Microsoft Secure Score,
 // the number clients already recognise. Never a round 100%: a real posture score
 // with headroom (~71%), breathing gently.
 //
 // Served as an external module (referenced with `is:inline src`) so it satisfies a
-// strict `script-src 'self'` — the site ships no inline executable scripts. The
+// strict `script-src 'self'` - the site ships no inline executable scripts. The
 // site uses no client framework, so this is plain DOM/canvas, not React.
 // See docs/deploy.md.
 
@@ -44,7 +44,7 @@ if (canvas) {
 
   // ── Gauge geometry ──
   const A0 = 0.75 * Math.PI; // start angle (lower-left)
-  const SWEEP = 1.5 * Math.PI; // 270°, clockwise — open gap at the bottom
+  const SWEEP = 1.5 * Math.PI; // 270°, clockwise - open gap at the bottom
   const LINE = 11; // arc stroke width
   const TICKS = 12; // trapezoid tick marks around the arc
   const clamp01 = (x) => (x < 0 ? 0 : x > 1 ? 1 : x);
@@ -107,7 +107,7 @@ if (canvas) {
       ctx.stroke();
     }
 
-    // Track — full arc, unfilled.
+    // Track - full arc, unfilled.
     ctx.lineCap = 'round';
     ctx.lineWidth = LINE;
     ctx.beginPath();
@@ -115,7 +115,7 @@ if (canvas) {
     ctx.strokeStyle = 'rgba(255,255,255,0.08)';
     ctx.stroke();
 
-    // Fill — arc from start to the score, bright purple with a soft glow.
+    // Fill - arc from start to the score, bright purple with a soft glow.
     ctx.beginPath();
     ctx.arc(cx, cy, R, A0, A0 + SWEEP * p);
     ctx.strokeStyle = BRIGHT_CSS;
@@ -124,7 +124,7 @@ if (canvas) {
     ctx.stroke();
     ctx.shadowBlur = 0;
 
-    // Tick marks — trapezoids just outside the arc, tangent to it.
+    // Tick marks - trapezoids just outside the arc, tangent to it.
     for (let i = 0; i < TICKS; i++) {
       const frac = i / (TICKS - 1);
       const ang = A0 + SWEEP * frac;
@@ -145,7 +145,7 @@ if (canvas) {
       ctx.restore();
     }
 
-    // Centre — the brand trapezoid, faint fill + soft outline.
+    // Centre - the brand trapezoid, faint fill + soft outline.
     ctx.save();
     ctx.translate(cx, cy);
     traceCenteredTrap(32);
@@ -156,7 +156,7 @@ if (canvas) {
     ctx.stroke();
     ctx.restore();
 
-    // Leading dot — the live read-head sitting on the arc end.
+    // Leading dot - the live read-head sitting on the arc end.
     const end = A0 + SWEEP * p;
     ctx.beginPath();
     ctx.arc(cx + Math.cos(end) * R, cy + Math.sin(end) * R, 5, 0, Math.PI * 2);
@@ -167,7 +167,7 @@ if (canvas) {
     ctx.shadowBlur = 0;
   };
 
-  // Warm the scene so the first painted frame is an already-developed gauge —
+  // Warm the scene so the first painted frame is an already-developed gauge -
   // never an empty track, and robust if rAF is delayed (offscreen, capture, PDF).
   const warmUp = () => {
     for (let i = 0; i < 140; i++) update(1 / 60);
@@ -211,9 +211,9 @@ if (canvas) {
   });
 
   if (reduceMotion) {
-    // Static, fully-developed gauge — also what print/PDF capture.
+    // Static, fully-developed gauge - also what print/PDF capture.
   } else if ('IntersectionObserver' in window) {
-    // Pause when the band is offscreen — keeps it off the CPU/GPU budget.
+    // Pause when the band is offscreen - keeps it off the CPU/GPU budget.
     const io = new IntersectionObserver(
       (entries) => {
         for (const e of entries) e.isIntersecting ? start() : stop();

@@ -1,4 +1,4 @@
-# AI crawlers — explicitly welcomed (training, search indexing and retrieval).
+# AI crawlers - explicitly welcomed (training, search indexing and retrieval).
 User-agent: GPTBot
 Allow: /
 

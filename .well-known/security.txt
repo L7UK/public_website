@@ -1,4 +1,4 @@
-# Layer 7 — security contact (RFC 9116)
+# Layer 7 - security contact (RFC 9116)
 # https://layer7.uk/.well-known/security.txt
 
 # Using the general inbox: security@layer7.uk is not currently provisioned.

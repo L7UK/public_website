@@ -6,7 +6,7 @@
 // soft-purple trail. The mesh is everywhere; delivery runs straight through it.
 //
 // Served as an external module (referenced with `is:inline src`) so it satisfies a
-// strict `script-src 'self'` — the site ships no inline executable scripts.
+// strict `script-src 'self'` - the site ships no inline executable scripts.
 // See docs/deploy.md.
 
 const SLOPE = 16 / 29; // Layer 7 brand angle = slant of the trapezoid edge
@@ -123,7 +123,7 @@ if (canvas) {
     ctx.fillStyle = INK;
     ctx.fillRect(0, 0, W, H);
 
-    // Lattice — thin outline always; bright fill + glow where the thread is near.
+    // Lattice - thin outline always; bright fill + glow where the thread is near.
     ctx.lineWidth = 1;
     for (const m of marks) {
       traceMark(m.x, m.y, MARK_H);
@@ -138,7 +138,7 @@ if (canvas) {
       ctx.stroke();
     }
 
-    // Trail — width + alpha ramp 0→full toward the head.
+    // Trail - width + alpha ramp 0→full toward the head.
     ctx.lineCap = 'round';
     for (let i = 1; i < trail.length; i++) {
       const p = i / (trail.length - 1); // 0 tail → 1 head
@@ -152,7 +152,7 @@ if (canvas) {
       ctx.stroke();
     }
 
-    // Head — white dot with a bright-purple halo.
+    // Head - white dot with a bright-purple halo.
     ctx.beginPath();
     ctx.arc(head.x, head.y, 4.5, 0, Math.PI * 2);
     ctx.fillStyle = '#ffffff';
@@ -214,7 +214,7 @@ if (canvas) {
   if (reduceMotion) {
     staticFrame();
   } else if ('IntersectionObserver' in window) {
-    // Pause when the band is offscreen — keeps it off the CPU/GPU budget.
+    // Pause when the band is offscreen - keeps it off the CPU/GPU budget.
     const io = new IntersectionObserver(
       (entries) => {
         for (const e of entries) e.isIntersecting ? start() : stop();
