@@ -9,6 +9,8 @@
 - [Public & Private Sector](https://layer7.uk/sectors/): government-grade security across UK public and private sectors; G-Cloud 14, DOS 7, CCS frameworks.
 
 ## Insights
+- [Does Cyber Essentials Plus require a penetration test?](https://layer7.uk/insights/does-cyber-essentials-plus-require-a-penetration-test/)
+- [What CREST accreditation means when you buy a penetration test](https://layer7.uk/insights/what-crest-accreditation-means-penetration-test/)
 - [How to choose a Cyber Essentials certification body](https://layer7.uk/insights/how-to-choose-a-cyber-essentials-certification-body/)
 - [What EASM actually finds, and when you need it](https://layer7.uk/insights/what-easm-actually-finds/)
 - [DCC Level 0: what the MOD's December 2026 deadline actually requires](https://layer7.uk/insights/dcc-level-0-requirements/)
