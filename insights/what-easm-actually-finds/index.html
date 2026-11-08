@@ -7,7 +7,7 @@ never written down: the subdomain from a campaign three years ago, the portal a 
 still hosts, the servers that arrived with an acquisition. In Quarter 2 of 2026 alone, 353 mergers
 and acquisitions involving UK companies completed. Every one of them merged two asset inventories
 at speed, and inventories do not merge cleanly.</p></p>
-<p>Your asset list is not wrong because somebody was careless. It is wrong because it is a snapshot of something that changes every time the business does anything.</p>
+<p>Your asset list is wrong, but probably not because anyone was careless. It is a snapshot of something that changes every time the business does anything.</p>
 <div class="stats" data-astro-cid-q7z4zrag><div class="stats__cell" data-astro-cid-q7z4zrag><div class="stats__value" data-astro-cid-q7z4zrag>353</div><div class="stats__label" data-astro-cid-q7z4zrag>Mergers and acquisitions involving UK companies completed in Q2 2026</div></div><div class="stats__cell" data-astro-cid-q7z4zrag><div class="stats__value" data-astro-cid-q7z4zrag>7</div><div class="stats__label" data-astro-cid-q7z4zrag>Ordinary business events that put assets outside your asset list</div></div><div class="stats__cell" data-astro-cid-q7z4zrag><div class="stats__value stats__value--accent" data-astro-cid-q7z4zrag>1,760</div><div class="stats__label" data-astro-cid-q7z4zrag>Entries in CISA&#39;s Known Exploited Vulnerabilities catalogue, 27 October 2026</div></div></div>
 <h2 id="the-events-that-break-your-inventory">The events that break your inventory</h2>
 <p>Unknown assets are not random. They are produced, reliably, by ordinary business activity. These are the events worth recognising, because each one leaves a specific kind of thing behind.</p>
@@ -39,14 +39,14 @@ position.</p></li></ol>
 <p>They compose rather than compete. Discovery without remediation is a longer list; scanning without discovery is a well-maintained blind spot. If you want the scanning-versus-testing distinction in full, we have written it up separately in <a href="/insights/penetration-testing-vs-vulnerability-scanning/">penetration testing vs vulnerability scanning</a>, and the prioritisation side in <a href="/insights/what-continuous-vulnerability-management-means/">what continuous vulnerability management actually means</a>.</p>
 <p>The order matters. Discovery feeds scanning, scanning feeds remediation, and testing validates the exposures that look serious. CISA’s Known Exploited Vulnerabilities catalogue listed 1,760 entries as of 27 October 2026. Knowing which of your assets carry one of them requires knowing what your assets are first.</p>
 <h2 id="when-you-actually-need-a-product">When you actually need a product</h2>
-<p>Be honest about your own position before you buy.</p>
+<p>Look hard at your own position before you buy.</p>
 <p><strong>You probably do not need one yet if</strong> you run a single domain, a handful of internet-facing services, and one cloud tenant that IT controls. Do the certificate transparency exercise above once a quarter, keep your DNS tidy, and put the money into remediation instead.</p>
 <p><strong>You probably do need one if</strong> any of these are true: you have acquired a company in the last two years; your cloud spend is devolved to departments; you have a supplier-hosted customer portal; your estate spans more than a couple of domains; you have been through a rebrand; or you cannot produce a current list of your internet-facing services in an afternoon.</p>
 <p>That last one is the real test. If producing the list is a project, the list does not exist.</p>
 <h2 id="what-to-ask-a-provider">What to ask a provider</h2>
 <p>The NCSC guide groups EASM features into visibility and insight, security analysis, and supporting functions. Those are useful headings for a conversation:</p>
 <ol class="ins-qs"><li><p><strong>How do you attribute assets to us?</strong> Discovery is easy; deciding what is
-genuinely yours is the hard part. Ask how false attributions are handled, because an alert about
+really yours is the hard part. Ask how false attributions are handled, because an alert about
 someone else’s server trains people to ignore alerts.</p></li><li><p><strong>How often does discovery run?</strong> Good products refresh daily. Quarterly discovery
 is an audit with a subscription fee.</p></li><li><p><strong>What happens when something new appears?</strong> Alerting, workflow, ownership
 assignment, or just a dashboard you have to remember to open.</p></li><li><p><strong>What happens after discovery?</strong> This is the question that separates offerings. A
@@ -54,7 +54,7 @@ discovered asset that is never scanned, prioritised and fixed has not improved y
 only your paperwork.</p></li><li><p><strong>Can I export the raw data?</strong> You should be able to leave with your own asset
 inventory.</p></li><li><p><strong>What does it cover beyond CVEs?</strong> DNS, email, certificates, exposed services: the
 issues above.</p></li><li><p><strong>Who validates the serious findings?</strong> An automated severity is a starting point,
-not a conclusion. Ask whether a qualified tester can confirm that an exposure is genuinely
+not a conclusion. Ask whether a qualified tester can confirm that an exposure is actually
 reachable, and whether the firm holds CREST or Cyber Scheme accreditation for that testing.</p></li></ol>
 <h2 id="a-note-on-cyber-essentials">A note on Cyber Essentials</h2>
 <p>Every internet-facing service is in scope for <a href="/services/cyber-essentials/">Cyber Essentials</a>, and the scope is declared by you. If you do not know what your internet-facing services are, your scope is an estimate, and certification against an estimate is worth what you would expect. This is one of the more practical arguments for doing discovery properly: it makes the scope statement defensible.</p>
@@ -66,7 +66,7 @@ our <a href="/services/continuous-vulnerability-management/">vulnerability manag
 pipeline: scanned, prioritised against exploitation status and your context, and tracked to
 remediation. Layer 7 is CREST accredited for penetration testing and vulnerability assessment,
 and a Cyber Scheme Accredited Company, so when an exposure looks serious our testers can probe
-it to confirm whether it is genuinely reachable. As an IASME Certification Body since 2014, we
+it to confirm whether it is reachable. As an IASME Certification Body since 2014, we
 can also tell you plainly what that discovery means for your Cyber Essentials scope.</p></p></div><a class="promo__link" href="/services/attack-surface-management/" data-astro-cid-cxqlpdbw>Attack surface management</a></aside>
 <hr/>
 <h2 id="sources">Sources</h2>

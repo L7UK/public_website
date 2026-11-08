@@ -7,14 +7,14 @@
 <li><strong>New version and name.</strong> The requirements are now v3.3, and the assessment framework is named Danzell.</li>
 <li><strong>MFA is mandatory.</strong> Where a cloud service offers multi-factor authentication, you must enable it. Failing to do so is now an automatic fail, not a fixable condition.</li>
 <li><strong>Cloud is formally defined.</strong> A clear definition of “cloud service” means cloud platforms can no longer be left out of scope.</li>
-<li><strong>Whole-scope patching.</strong> During the CE+ audit you must patch your entire scope, not just the sample devices being tested.</li>
+<li><strong>Whole-scope patching.</strong> During the CE+ audit you must patch your entire scope, including devices outside the tested sample.</li>
 <li><strong>Transition window.</strong> Assessment accounts opened before late April 2026 retained a window to certify under the previous requirements; new accounts are assessed against v3.3.</li>
 </ul>
 <h2 id="multi-factor-authentication-is-now-a-hard-requirement">Multi-factor authentication is now a hard requirement</h2>
 <p>The most significant practical change: if a cloud service you use offers multi-factor authentication, you must turn it on, using a method approved by the NCSC. Previously, gaps here could sometimes be treated as remediation. Under the 2026 rules, an available-but-disabled MFA option is an automatic assessment fail.</p>
 <p>What this means in practice:</p>
 <ul>
-<li>Inventory every cloud service in use, not just the obvious ones.</li>
+<li>Inventory every cloud service in use, including the less obvious ones.</li>
 <li>Confirm MFA is enabled for all users, including administrators and, where supported, service accounts.</li>
 <li>Check the method meets NCSC-approved standards. App-based or hardware tokens are stronger choices than SMS.</li>
 </ul>
@@ -28,8 +28,8 @@
 <li>Confirm each one meets the five controls, particularly access control and MFA.</li>
 </ul>
 <h2 id="patching-the-whole-scope-not-just-the-sample">Patching: the whole scope, not just the sample</h2>
-<p>IASME identified that some organisations had been passing CE+ by patching only the sample devices an assessor happened to test, while leaving the rest of the estate vulnerable. The 2026 rules close that gap: when the audit identifies required updates, they must be applied across the entire in-scope environment, not just the tested sample.</p>
-<p>Note that the deadline itself is unchanged: critical and high-severity updates must be applied within 14 days. What changed in 2026 is the reach: that standard now has to hold across your entire in-scope estate, not just the devices an assessor happens to sample.</p>
+<p>IASME identified that some organisations had been passing CE+ by patching only the sample devices an assessor happened to test, while leaving the rest of the estate vulnerable. The 2026 rules close that gap: when the audit identifies required updates, they must be applied across the entire in-scope environment, whether or not a device was in the tested sample.</p>
+<p>The deadline itself is unchanged: critical and high-severity updates must be applied within 14 days. What changed in 2026 is the reach: that standard now has to hold across your entire in-scope estate, including devices an assessor never samples.</p>
 <p>In practice this rewards organisations with real, consistent patch management and penalises last-minute, selective fixes.</p>
 <p>What to do:</p>
 <ul>
@@ -48,7 +48,7 @@
 <ol>
 <li>Inventory your cloud services and devices. You can’t scope honestly without it.</li>
 <li>Switch on MFA everywhere it’s offered, using an NCSC-approved method.</li>
-<li>Apply patches across the whole estate, not just where you expect to be tested.</li>
+<li>Apply patches across the whole estate, including devices you don’t expect to be tested.</li>
 <li>Run a <a href="/insights/cyber-essentials-plus-audit-checklist/">readiness review</a> before the formal audit to catch fails cheaply.</li>
 <li>Talk to your certification body early, especially about which version applies to you.</li>
 </ol>
